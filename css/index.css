@@ -1,3 +1,33 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'), url(https://fonts.gstatic.com/s/opensans/v16/memnYaGs126MiZpBA-UFUKWyV9hrIqY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url(https://fonts.gstatic.com/s/opensans/v16/memnYaGs126MiZpBA-UFUKXGUdhrIqY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN_r8OUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UNirkOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -133,5 +163,274 @@ table {
 html,
 body {
   height: 100%;
-  background-color: green;
+}
+.job-title {
+  font-size: 20px;
+  text-align: left;
+  font-weight: 400;
+}
+.job-description {
+  font-size: 18px;
+  text-align: left;
+}
+/*============================================
+ BASIC
+============================================*/
+body {
+  padding-top: 3.5em;
+}
+body,
+input,
+textarea,
+select {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.85em;
+  color: #888;
+  font-weight: 300;
+  font-size: 13pt;
+}
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #3e3e3e;
+  margin: 0 0 0.75em 0;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: none;
+  color: inherit;
+}
+a {
+  text-decoration: none;
+}
+header {
+  margin: 0 0 3em 0;
+}
+header > p {
+  font-size: 1.25em;
+  margin: 0;
+}
+footer {
+  margin: 3em 0 0 0;
+}
+footer > p {
+  font-size: 1.25em;
+}
+/*==================================================
+ HEADER 
+==================================================*/
+header {
+  text-align: center;
+}
+header .nav-bar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.17);
+  height: 60px;
+}
+header .nav-bar a {
+  text-decoration: none;
+  text-align: center;
+  color: grey;
+  padding: 25px;
+  font-size: 12pt;
+  letter-spacing: 0.08em;
+}
+header .nav-bar a:hover {
+  color: #696969;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+header .header-content {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10em 10em 10em 10em;
+}
+header .header-image {
+  border-radius: 100%;
+  width: 20em;
+  height: 20em;
+  margin: 0;
+}
+@media (max-width: 800px) {
+  header .header-image {
+    border-radius: 100%;
+    width: 40em;
+    height: 40em;
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  header .header-image {
+    width: 15em;
+    height: 15em;
+    margin-bottom: 0;
+  }
+}
+header .header-image img {
+  width: 100%;
+  border-radius: 100%;
+}
+@media (max-width: 800px) {
+  header .header-image img {
+    width: 100%;
+    border-radius: 100%;
+  }
+}
+@media (max-width: 500px) {
+  header .header-image img {
+    width: 100%;
+    border-radius: 100%;
+  }
+}
+header .description {
+  padding-left: 70px;
+}
+header .description h1 {
+  font-size: 45px;
+}
+header .description h2 {
+  font-size: 25px;
+  text-align: left;
+}
+header .description p {
+  font-size: 20px;
+  text-align: left;
+}
+header #top {
+  border-bottom: 0.1px solid grey;
+}
+header #arrows {
+  width: 75px;
+  height: 65px;
+  margin-bottom: 20px;
+}
+header #arrows:hover polygon {
+  fill: grey;
+  transition: all 0.2s ease-out;
+}
+header #arrows:hover polygon .arrow-bottom {
+  transform: translateY(-18px);
+}
+header #arrows:hover polygon .arrow-top {
+  transform: translateY(18px);
+}
+header #arrows polygon {
+  fill: grey;
+  transition: all 0.2s ease-out;
+}
+header #arrows polygon .arrow-middle {
+  opacity: 0.75;
+}
+header #arrows polygon .arrow-top {
+  opacity: 0.5;
+}
+/*=============================================================
+ MAIN
+=============================================================*/
+main {
+  border-bottom: 0.5px solid grey;
+}
+.main-about {
+  display: flex;
+  padding: 40px;
+  border-bottom: 0.5px solid grey;
+}
+.main-about .item-about {
+  width: 50%;
+}
+.main-about .title-about {
+  font-size: 30px;
+  text-align: left;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.main-about .left {
+  padding-right: 60px;
+}
+.main-about .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 2px;
+}
+.main-about .grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.main-about #arrows {
+  width: 75px;
+  height: 65px;
+  margin-bottom: 20px;
+}
+.main-about #arrows:hover polygon {
+  fill: grey;
+  transition: all 0.2s ease-out;
+}
+.main-about #arrows:hover polygon .arrow-bottom {
+  transform: translateY(-18px);
+}
+.main-about #arrows:hover polygon .arrow-top {
+  transform: translateY(18px);
+}
+.main-about #arrows polygon {
+  fill: grey;
+  transition: all 0.2s ease-out;
+}
+.main-about #arrows polygon .arrow-middle {
+  opacity: 0.75;
+}
+.main-about #arrows polygon .arrow-top {
+  opacity: 0.5;
+}
+.main-experience {
+  padding: 40px;
+}
+.main-experience .title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+.main-experience .item-experience {
+  padding-bottom: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+}
+/*========================================================
+ FOOTER
+========================================================*/
+footer {
+  text-align: center;
+}
+footer .title-footer {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+footer span {
+  padding: 40px;
 }

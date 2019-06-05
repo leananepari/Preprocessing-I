@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>My Resume</title>
 
@@ -14,6 +14,76 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <header>
+      <div class="nav-bar">
+        <nav>
+          <a href="services.html">HOME</a>
+          <a href="product.html">ABOUT</a>
+          <a href="vision.html">EXPERIENCE</a>
+          <a href="/features">CONTACT</a>
+        </nav>
+      </div>
+      <section id="top">
+        <div class="header-content">
+          <div class="header-image"><img src="images/profile.jpg" alt="Header Image"></div>
+          <div class="description">
+            <h1>Leana Neparidze</h1>
+            <h2>Full-Stack Web Developer</h2>
+            <p>San Francisco, CA</p>
+          </div>
+        </div>
+        <svg id="arrows">
+          <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+          <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+          <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+        </svg>
+      </section>
+    </header>
+    <main>
+      <section class="main-about">
+        <div class="item-about left">
+          <div class="title-about">About</div>
+          <p>Lectus mauris ultrices eros in cursus turpis massa tincidunt dui. Nec feugiat in fermentum posuere. Tristique magna sit amet purus gravida quis blandit turpis cursus. Facilisi morbi tempus iaculis urna. Netus et malesuada fames ac turpis. Diam quis enim lobortis scelerisque fermentum dui faucibus in. Vitae semper quis lectus nulla at. Imperdiet proin fermentum leo vel orci porta non pulvinar. Morbi leo urna molestie at elementum eu facilisis. A cras semper auctor neque.</p>
+        </div>
+        <div class="item-about">
+          <div class="grid-container">
+              <div class="grid-item">JavaScript</div>
+              <div class="grid-item">HTML</div>
+              <div class="grid-item">CSS</div>
+              <div class="grid-item">Python</div>
+              <div class="grid-item">Java</div>
+              <div class="grid-item">React</div>
+              <div class="grid-item">Redux</div>
+              <div class="grid-item">Django</div>
+              <div class="grid-item">Git</div>
+            </div>
+        </div>
+      </section>
+      <!-- <svg id="arrows">
+        <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+        <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+        <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+      </svg> -->
+      <section class="main-experience">
+        <div class="title">My Work</div>
+        <div class="item-experience">
+          <div class="job-title">Title</div>
+          <p>Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Et malesuada fames ac turpis egestas sed tempus urna et. Aliquam faucibus purus in massa tempor nec feugiat nisl pretium. Tristique senectus et netus et malesuada. A diam maecenas sed enim ut sem viverra aliquet. Libero id faucibus nisl tincidunt eget nullam non nisi est. Mattis molestie a iaculis at erat.</p>
+        </div>
+        <div class="item-experience">
+          <div class="job-title">Title</div>
+          <p>Lectus nulla at volutpat diam ut. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Integer enim neque volutpat ac tincidunt. Nunc id cursus metus aliquam eleifend mi. Ornare arcu dui vivamus arcu felis. Tempus iaculis urna id volutpat lacus laoreet non. Turpis massa tincidunt dui ut ornare lectus sit amet est. Morbi non arcu risus quis varius quam.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="title-footer">Contact Me</div>
+      <span>Icon 1</span>
+      <span>Icon 2</span>
+      <span>Icon 3</span>
+      <span>Icon 4</span>
+    </footer>
+  </div>
 </body>
 </html>
