@@ -264,6 +264,19 @@ header .header-content {
   align-items: center;
   padding: 10em 10em 10em 10em;
 }
+@media (max-width: 500px) {
+  header .header-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5em 5em 5em 5em;
+  }
+}
+@media (max-width: 800px) {
+  header .header-content {
+    padding: 3em 3em 3em 3em;
+    justify-content: center;
+  }
+}
 header .header-image {
   border-radius: 100%;
   width: 20em;
@@ -273,15 +286,15 @@ header .header-image {
 @media (max-width: 800px) {
   header .header-image {
     border-radius: 100%;
-    width: 40em;
-    height: 40em;
+    max-width: 15em;
+    max-height: 15em;
     margin: 0;
   }
 }
 @media (max-width: 500px) {
   header .header-image {
-    width: 15em;
-    height: 15em;
+    min-width: 15em;
+    min-height: 15em;
     margin-bottom: 0;
   }
 }
@@ -304,16 +317,37 @@ header .header-image img {
 header .description {
   padding-left: 70px;
 }
+@media (max-width: 500px) {
+  header .description {
+    padding-left: 0px;
+  }
+}
 header .description h1 {
   font-size: 45px;
+}
+@media (max-width: 500px) {
+  header .description h1 {
+    padding-top: 30px;
+    text-align: center;
+  }
 }
 header .description h2 {
   font-size: 25px;
   text-align: left;
 }
+@media (max-width: 500px) {
+  header .description h2 {
+    text-align: center;
+  }
+}
 header .description p {
   font-size: 20px;
   text-align: left;
+}
+@media (max-width: 500px) {
+  header .description p {
+    text-align: center;
+  }
 }
 header #top {
   border-bottom: 0.1px solid grey;
@@ -354,8 +388,28 @@ main {
   padding: 40px;
   border-bottom: 0.5px solid grey;
 }
+@media (max-width: 500px) {
+  .main-about {
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .main-about {
+    flex-direction: column;
+  }
+}
 .main-about .item-about {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .main-about .item-about {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .main-about .item-about {
+    width: 100%;
+  }
 }
 .main-about .title-about {
   font-size: 30px;
@@ -366,10 +420,32 @@ main {
 .main-about .left {
   padding-right: 60px;
 }
+@media (max-width: 500px) {
+  .main-about .left {
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .main-about .left {
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+}
 .main-about .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 2px;
+}
+@media (max-width: 500px) {
+  .main-about .grid-container {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 800px) {
+  .main-about .grid-container {
+    padding-left: 0px;
+  }
 }
 .main-about .grid-item {
   background-color: rgba(255, 255, 255, 0.8);

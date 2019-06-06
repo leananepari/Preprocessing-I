@@ -168,6 +168,17 @@ header {
     align-items: center;
     // flex-wrap: wrap;
     padding: 10em 10em 10em 10em;
+
+    @media (max-width: 500px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 5em 5em 5em 5em;
+    }
+
+    @media (max-width: 800px) {
+      padding: 3em 3em 3em 3em;
+      justify-content: center;
+    }
     
   }
 
@@ -179,14 +190,14 @@ header {
     
     @media (max-width: 800px) {
       border-radius: 100%;
-      width: 40em;
-      height: 40em;
+      max-width: 15em;
+      max-height: 15em;
       margin: 0;
     }
 
     @media (max-width: 500px) {
-      width: 15em;
-      height: 15em;
+      min-width: 15em;
+      min-height: 15em;
       margin-bottom: 0;
     }
   }
@@ -210,20 +221,39 @@ header {
 
   .description {
     padding-left: 70px;
+
+    @media (max-width: 500px) {
+      padding-left: 0px;
+    }
+
   }
 
   .description h1 {
     font-size: 45px;
+
+    @media (max-width: 500px) {
+      padding-top: 30px;
+      text-align: center;
+    }
+
   }
   
   .description h2 {
     font-size: 25px;
     text-align: left;
+
+    @media (max-width: 500px) {
+      text-align: center;
+    }
   }
 
   .description p {
     font-size: 20px;
     text-align: left;
+
+    @media (max-width: 500px) {
+      text-align: center;
+    }
   }
 
   #top {
@@ -282,8 +312,24 @@ main {
   padding: 40px;
   border-bottom: 0.5px solid grey;
 
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+
   .item-about {
     width: 50%;
+
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
   }
 
   .title-about {
@@ -295,6 +341,16 @@ main {
 
   .left {
     padding-right: 60px;
+
+    @media (max-width: 500px) {
+      padding-right: 0px;
+      padding-bottom: 30px;
+    }
+
+    @media (max-width: 800px) {
+      padding-right: 0px;
+      padding-bottom: 30px;
+    }
   }
 
   .grid-container {
@@ -302,6 +358,14 @@ main {
     grid-template-columns: auto auto auto;
     // background-color: grey;
     padding: 2px;
+
+    @media (max-width: 500px) {
+      padding-left: 0px;
+    }
+
+    @media (max-width: 800px) {
+      padding-left: 0px;
+    }
   }
 
   .grid-item {
